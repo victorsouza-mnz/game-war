@@ -216,7 +216,7 @@ LineRenderer:
   - {x: -8.452085, y: 8.342496, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &333371971
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &377360651
@@ -878,7 +878,7 @@ LineRenderer:
   - {x: 15.198957, y: -3.8111622, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &434472863
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &438981914
@@ -1649,7 +1649,7 @@ LineRenderer:
   - {x: 13.799784, y: 3.0977426, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1958,7 +1958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &451166893
@@ -2210,14 +2210,14 @@ LineRenderer:
   - {x: 10.871486, y: 5.9192486, z: 1}
   - {x: 10.664854, y: 5.8229775, z: 1}
   - {x: 10.1823225, y: 6.033131, z: 1}
-  - {x: 10.090748, y: 5.6245637, z: 1}
-  - {x: 9.441503, y: 5.8898973, z: 1}
-  - {x: 9.047487, y: 5.881679, z: 1}
-  - {x: 8.595018, y: 6.2714615, z: 1}
-  - {x: 8.355514, y: 6.1611013, z: 1}
-  - {x: 7.8765044, y: 6.338382, z: 1}
-  - {x: 7.3857546, y: 6.179886, z: 1}
-  - {x: 6.8057775, y: 6.182234, z: 1}
+  - {x: 10.077209, y: 5.6651764, z: 1}
+  - {x: 9.441503, y: 5.91246, z: 1}
+  - {x: 9.047487, y: 5.9042416, z: 1}
+  - {x: 8.595018, y: 6.2872553, z: 1}
+  - {x: 8.355514, y: 6.1881766, z: 1}
+  - {x: 7.8765044, y: 6.390276, z: 1}
+  - {x: 7.3857546, y: 6.2430615, z: 1}
+  - {x: 6.8057775, y: 6.2454095, z: 1}
   - {x: 6.597972, y: 6.321945, z: 1}
   - {x: 6.45239, y: 6.3031607, z: 1}
   - {x: 6.338509, y: 6.502748, z: 1}
@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &596412645
@@ -2637,7 +2637,7 @@ LineRenderer:
   - {x: 2.3738937, y: -0.86215097, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &605430191
@@ -3117,7 +3117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &645279989
@@ -3457,7 +3457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &667265745
@@ -4141,7 +4141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &684860034
@@ -4232,7 +4232,7 @@ LineRenderer:
   - {x: 11.04955, y: 4.9844017, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -4462,7 +4462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &696389568
@@ -4794,7 +4794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &703863119
@@ -4894,7 +4894,7 @@ LineRenderer:
   - {x: -9.687519, y: 4.872101, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -5160,7 +5160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &716545160
@@ -5181,7 +5181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &716545161
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5324,26 +5324,26 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -5.666585, y: 7.90339, z: 0}
-  - {x: -5.0536036, y: 8.354051, z: 1}
-  - {x: -4.0584145, y: 8.21967, z: 1}
+  - {x: -5.6711383, y: 7.917051, z: 0}
+  - {x: -5.0536036, y: 8.383649, z: 1}
+  - {x: -4.0606914, y: 8.260652, z: 1}
   - {x: -3.765268, y: 8.411746, z: 1}
-  - {x: -3.6582692, y: 7.986656, z: 1}
-  - {x: -3.3394482, y: 7.830443, z: 1}
-  - {x: -2.6823165, y: 8.403647, z: 1}
-  - {x: -2.9768696, y: 8.357549, z: 1}
+  - {x: -3.6468854, y: 8.0276375, z: 1}
+  - {x: -3.3303413, y: 7.8987455, z: 1}
+  - {x: -2.6140137, y: 8.458289, z: 1}
+  - {x: -2.992807, y: 8.375763, z: 1}
   - {x: -3.0651934, y: 8.817438, z: 1}
   - {x: -2.9089806, y: 8.973651, z: 1}
   - {x: -3.3848228, y: 9.317121, z: 1}
   - {x: -3.7447133, y: 9.315116, z: 1}
   - {x: -3.782069, y: 9.626983, z: 1}
-  - {x: -3.9656591, y: 9.504589, z: 1}
-  - {x: -4.0338497, y: 9.27379, z: 1}
+  - {x: -3.9656591, y: 9.511419, z: 1}
+  - {x: -4.083938, y: 9.301111, z: 1}
   - {x: -4.3253527, y: 9.46962, z: 1}
-  - {x: -4.0292044, y: 9.828386, z: 1}
-  - {x: -4.064995, y: 10.07607, z: 1}
-  - {x: -4.4786196, y: 10.115793, z: 1}
-  - {x: -4.7312217, y: 10.037546, z: 1}
+  - {x: -4.061079, y: 9.819281, z: 1}
+  - {x: -4.0968695, y: 10.066964, z: 1}
+  - {x: -4.464958, y: 10.099856, z: 1}
+  - {x: -4.7175603, y: 10.021609, z: 1}
   - {x: -4.6040754, y: 9.824012, z: 1}
   - {x: -4.7431903, y: 9.4920225, z: 1}
   - {x: -5.1253357, y: 9.23063, z: 1}
@@ -5353,25 +5353,25 @@ LineRenderer:
   - {x: -6.24611, y: 8.959066, z: 1}
   - {x: -6.2534323, y: 9.163637, z: 1}
   - {x: -6.697817, y: 9.228003, z: 1}
-  - {x: -6.601544, y: 9.444379, z: 1}
-  - {x: -7.041233, y: 9.828058, z: 1}
-  - {x: -7.3629527, y: 9.738887, z: 1}
-  - {x: -7.3643885, y: 9.992964, z: 1}
-  - {x: -7.931052, y: 10.017886, z: 1}
+  - {x: -6.6197577, y: 9.430719, z: 1}
+  - {x: -7.059447, y: 9.814399, z: 1}
+  - {x: -7.3925505, y: 9.757101, z: 1}
+  - {x: -7.316577, y: 9.915554, z: 1}
+  - {x: -7.931052, y: 9.992842, z: 1}
   - {x: -8.005063, y: 9.76861, z: 1}
   - {x: -8.421307, y: 9.639692, z: 1}
   - {x: -8.422063, y: 9.393887, z: 1}
   - {x: -8.2153, y: 8.925296, z: 1}
-  - {x: -8.378509, y: 8.567301, z: 1}
-  - {x: -8.318042, y: 8.484812, z: 1}
-  - {x: -7.2239375, y: 8.186005, z: 1}
-  - {x: -6.99648, y: 8.195008, z: 1}
-  - {x: -6.0850964, y: 7.8956223, z: 1}
-  - {x: -5.909862, y: 7.96177, z: 1}
-  - {x: -5.8122973, y: 7.7981734, z: 1}
+  - {x: -8.358018, y: 8.587792, z: 1}
+  - {x: -8.297551, y: 8.505303, z: 1}
+  - {x: -7.228491, y: 8.215602, z: 1}
+  - {x: -7.0010333, y: 8.224606, z: 1}
+  - {x: -6.0896497, y: 7.909283, z: 1}
+  - {x: -5.9144154, y: 7.975431, z: 1}
+  - {x: -5.8168507, y: 7.8118343, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -5662,7 +5662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &747458888
@@ -5982,7 +5982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &788450283
@@ -6091,7 +6091,7 @@ LineRenderer:
   - {x: 9.098664, y: 9.477599, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -6382,7 +6382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &796684265
@@ -6723,7 +6723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &801330614
@@ -6941,7 +6941,7 @@ LineRenderer:
   - {x: 6.0991855, y: -1.279447, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -7007,7 +7007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &840921955
@@ -7303,7 +7303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &852573288
@@ -7407,7 +7407,7 @@ LineRenderer:
   - {x: -5.7634225, y: 6.0643635, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -7645,7 +7645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &925581225
@@ -8032,7 +8032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &946615735
@@ -8376,7 +8376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &960195993
@@ -8709,7 +8709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1008965973
@@ -8812,7 +8812,7 @@ LineRenderer:
   - {x: 6.52779, y: 4.7131896, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -9069,7 +9069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1036611484
@@ -9163,7 +9163,7 @@ LineRenderer:
   - {x: -9.766328, y: 8.831199, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -9461,7 +9461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1037829606
@@ -9945,7 +9945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1104818557
@@ -10113,7 +10113,7 @@ LineRenderer:
   - {x: 2.6294484, y: 0.63935214, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -10322,7 +10322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1120147832
@@ -11330,7 +11330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1243931666
@@ -11425,7 +11425,7 @@ LineRenderer:
   - {x: 12.975028, y: 6.5161047, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -11662,7 +11662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1297671347
@@ -11761,7 +11761,7 @@ LineRenderer:
   - {x: 7.3409786, y: 8.102846, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -12094,7 +12094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1389079172
@@ -12201,7 +12201,7 @@ LineRenderer:
   - {x: -7.8778286, y: 3.0592182, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -12480,7 +12480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1478597088
@@ -12803,7 +12803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1565980329
@@ -12897,7 +12897,7 @@ LineRenderer:
   - {x: -3.6687753, y: 6.2841463, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -13122,7 +13122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1623805278
@@ -14554,7 +14554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1912339245
@@ -14910,7 +14910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1912925472
@@ -15194,7 +15194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &1925777631
@@ -15312,7 +15312,7 @@ LineRenderer:
   - {x: -7.544991, y: 4.3744874, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -15598,7 +15598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
   neighbors: []
 --- !u!1 &2029257529
