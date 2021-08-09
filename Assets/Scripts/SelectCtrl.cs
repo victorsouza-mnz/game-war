@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelectCtrl : MonoBehaviour
 {
@@ -33,6 +34,11 @@ public class SelectCtrl : MonoBehaviour
                 
             if(hit.collider != null)
             {
+                
+                for (int i =0; i < hit.collider.gameObject.GetComponent<countryAtributes>().neighbors.Length; i++)
+                {
+                    Debug.Log("pais : " + hit.collider.gameObject.GetComponent<countryAtributes>().neighbors[i].gameObject.name);
+                }
                 if (isSelected == true)
                 {
                     selectedCountry.gameObject.GetComponent<LineRenderer>().enabled = false; 
@@ -41,6 +47,8 @@ public class SelectCtrl : MonoBehaviour
                 selectedCountry = hit.collider.gameObject;
                 outline = hit.collider.gameObject.GetComponent<LineRenderer>();
                 outline.enabled = !outline.enabled;
+
+                hit.collider.gameObject.GetComponent<countryAtributes>().setTextNumberSoldiers();
                 
             }
             else
