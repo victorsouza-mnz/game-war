@@ -33,12 +33,12 @@ public class RollDice : MonoBehaviour
         List<int> diceResult2 = new List<int>();
 
         for (int i = 0; i < troop1; i++) {
-            diceResult1.Add(UnityEngine.Random.Range(1, 7));
+            diceResult1.Add(UnityEngine.Random.Range(1, 6));
         }
 
 
         for (int i = 0; i < troop2; i++) {
-            diceResult2.Add(UnityEngine.Random.Range(1, 7));
+            diceResult2.Add(UnityEngine.Random.Range(1, 6));
         }
 
         diceResult1.Sort();
