@@ -10,7 +10,7 @@ public class SelectCtrl : MonoBehaviour
     //MOCK - TODO : Mecanica de turnos
     private int currentPlayer = 2;
     private int currentPlayerSoldiers = 6;
-    private string phase = "attack";
+    private string phase = "fortification";
 
     //DECLARATIONS
     private bool isSelected = false;
@@ -39,22 +39,21 @@ public class SelectCtrl : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-
-
             if (this.phase == "fortification") {
                 fortifyCountry();
                 selectCountry();
             }
             else if (this.phase == "attack")
             {
-                selectCountry();
-                if (selectedCountry)
-                {
-                    attackHelper.showNeighbors(selectedCountry);
-                }
-                
+                attackHelper.attackerManager();
+
+               
             }
-            
+
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            this.phase = "attack";
         }
     }
 
@@ -74,7 +73,7 @@ public class SelectCtrl : MonoBehaviour
                     outline.enabled = true;
 
                 }
-                if (isSelected == true) 
+                else if (isSelected == true) 
                 {
                     selectedCountry.gameObject.GetComponent<LineRenderer>().enabled = false;
                     isSelected = true;
@@ -88,11 +87,10 @@ public class SelectCtrl : MonoBehaviour
         } else {
             if (isSelected)
                 {
-
-                isSelected = false;
-                outline = selectedCountry.gameObject.GetComponent<LineRenderer>();
-                selectedCountry = null;
-                outline.enabled = false;
+                    isSelected = false;
+                    outline = selectedCountry.gameObject.GetComponent<LineRenderer>();
+                    selectedCountry = null;
+                    outline.enabled = false;
                 }
         }
     }
@@ -108,6 +106,12 @@ public class SelectCtrl : MonoBehaviour
                 currentPlayerSoldiers--;
             }
         }
+    }
+
+
+    public int getCurrentPlayerId()
+    {
+        return this.currentPlayer;
     }
 
 }
