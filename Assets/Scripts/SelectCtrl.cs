@@ -3,25 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class SelectCtrl : MonoBehaviour
 {
 
     //MOCK - TODO : Mecanica de turnos
     private int currentPlayer = 2;
     private int currentPlayerSoldiers = 6;
-    private string phase = "fortification";
+    private string phase = "attack";
 
     //DECLARATIONS
     private bool isSelected = false;
     private GameObject selectedCountry;
     private LineRenderer outline;
 
+    //HELPERS
+    public AttackHelper attackHelper;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        attackHelper = this.gameObject.GetComponent<AttackHelper>();
+
+    }   
 
     // Update is called once per frame
     void Update()
@@ -35,10 +39,16 @@ public class SelectCtrl : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
 
+            selectCountry();
+
             if (this.phase == "fortification") {
                 fortifyCountry();
             }
-            selectCountry();
+            else if (this.phase == "attack")
+            {
+
+                attackHelper.console();
+            }
             
         }
     }
@@ -68,10 +78,14 @@ public class SelectCtrl : MonoBehaviour
             }
 
         } else {
-            isSelected = false;
-            outline = selectedCountry.gameObject.GetComponent<LineRenderer>();
-            selectedCountry = null;
-            outline.enabled = false;
+            if (isSelected)
+                {
+
+                isSelected = false;
+                outline = selectedCountry.gameObject.GetComponent<LineRenderer>();
+                selectedCountry = null;
+                outline.enabled = false;
+                }
         }
     }
 
