@@ -15,6 +15,7 @@ public class SelectCtrl : MonoBehaviour
     //DECLARATIONS
     private bool isSelected = false;
     private GameObject selectedCountry;
+
     private LineRenderer outline;
 
     //HELPERS
@@ -23,7 +24,7 @@ public class SelectCtrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        attackHelper = this.gameObject.GetComponent<AttackHelper>();
+        attackHelper = gameObject.GetComponent<AttackHelper>();
 
     }   
 
@@ -39,15 +40,19 @@ public class SelectCtrl : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
 
-            selectCountry();
 
             if (this.phase == "fortification") {
                 fortifyCountry();
+                selectCountry();
             }
             else if (this.phase == "attack")
             {
-
-                attackHelper.console();
+                selectCountry();
+                if (selectedCountry)
+                {
+                    attackHelper.showNeighbors(selectedCountry);
+                }
+                
             }
             
         }
@@ -65,7 +70,9 @@ public class SelectCtrl : MonoBehaviour
                     isSelected = true;
                     selectedCountry = hit.collider.gameObject;
                     outline = hit.collider.gameObject.GetComponent<LineRenderer>();
+                    selectedCountry.GetComponent<LineRenderer>().materials[0].color = new Color(1.00000f, 1.00000f, 1.00000f);
                     outline.enabled = true;
+
                 }
                 if (isSelected == true) 
                 {
@@ -73,6 +80,7 @@ public class SelectCtrl : MonoBehaviour
                     isSelected = true;
                     selectedCountry = hit.collider.gameObject;
                     outline = hit.collider.gameObject.GetComponent<LineRenderer>();
+                    selectedCountry.GetComponent<LineRenderer>().materials[0].color = new Color(1.00000f, 1.00000f, 1.00000f);
                     outline.enabled = true;
                 }
             }

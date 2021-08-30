@@ -14853,7 +14853,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120147832}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14962,7 +14962,7 @@ LineRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -14978,7 +14978,7 @@ LineRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 0
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
@@ -23106,6 +23106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2029257531}
   - component: {fileID: 2029257530}
+  - component: {fileID: 2029257532}
   m_Layer: 0
   m_Name: SelectCtrl
   m_TagString: Untagged
@@ -23125,6 +23126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03af84382e4847948bcccf93313cb8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackHelper: {fileID: 0}
 --- !u!4 &2029257531
 Transform:
   m_ObjectHideFlags: 0
@@ -23139,6 +23141,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029257532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029257529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e68cb9d520c2e14d9628c89bc06f340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2045384387
 GameObject:
   m_ObjectHideFlags: 0
