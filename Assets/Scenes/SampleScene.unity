@@ -1533,6 +1533,7 @@ MonoBehaviour:
   neighbors:
   - {fileID: 840921955}
   - {fileID: 723795864}
+  - {fileID: 1565980329}
 --- !u!1 &438981914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,7 +3147,10 @@ MonoBehaviour:
   playerID: 0
   color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
-  neighbors: []
+  neighbors:
+  - {fileID: 377360651}
+  - {fileID: 747458888}
+  - {fileID: 960195993}
 --- !u!1 &615584584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4392,6 +4396,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1104818557}
   - {fileID: 1669438287}
+  - {fileID: 946615735}
+  - {fileID: 645279989}
 --- !u!1 &684860034
 GameObject:
   m_ObjectHideFlags: 0
@@ -4716,6 +4722,7 @@ MonoBehaviour:
   - {fileID: 1243931666}
   - {fileID: 438981914}
   - {fileID: 573121824}
+  - {fileID: 1297671347}
 --- !u!1 &696389568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5047,7 +5054,11 @@ MonoBehaviour:
   playerID: 0
   color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
-  neighbors: []
+  neighbors:
+  - {fileID: 796684265}
+  - {fileID: 333371971}
+  - {fileID: 645279989}
+  - {fileID: 840921955}
 --- !u!1 &703863119
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,7 +6253,10 @@ MonoBehaviour:
   playerID: 0
   color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
-  neighbors: []
+  neighbors:
+  - {fileID: 960195993}
+  - {fileID: 605430191}
+  - {fileID: 377360651}
 --- !u!1 &788450283
 GameObject:
   m_ObjectHideFlags: 0
@@ -7273,6 +7287,7 @@ MonoBehaviour:
   numberSoldiers: 0
   neighbors:
   - {fileID: 1912339245}
+  - {fileID: 1104818557}
 --- !u!1 &840921955
 GameObject:
   m_ObjectHideFlags: 0
@@ -7570,6 +7585,7 @@ MonoBehaviour:
   numberSoldiers: 0
   neighbors:
   - {fileID: 434472863}
+  - {fileID: 696389568}
 --- !u!1 &852573288
 GameObject:
   m_ObjectHideFlags: 0
@@ -8987,6 +9003,7 @@ MonoBehaviour:
   neighbors:
   - {fileID: 438981914}
   - {fileID: 1899122772}
+  - {fileID: 747458888}
 --- !u!1 &1008965973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9746,6 +9763,7 @@ MonoBehaviour:
   neighbors:
   - {fileID: 723795864}
   - {fileID: 222549285}
+  - {fileID: 1229834762}
 --- !u!1 &1037829606
 GameObject:
   m_ObjectHideFlags: 0
@@ -11629,6 +11647,8 @@ MonoBehaviour:
   - {fileID: 438981914}
   - {fileID: 1243931666}
   - {fileID: 788450283}
+  - {fileID: 1036611484}
+  - {fileID: 1478597088}
 --- !u!1 &1243931666
 GameObject:
   m_ObjectHideFlags: 0
@@ -12402,6 +12422,7 @@ MonoBehaviour:
   - {fileID: 788450283}
   - {fileID: 1243931666}
   - {fileID: 573121824}
+  - {fileID: 684860034}
 --- !u!1 &1389079172
 GameObject:
   m_ObjectHideFlags: 0
@@ -13113,7 +13134,9 @@ MonoBehaviour:
   playerID: 0
   color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
-  neighbors: []
+  neighbors:
+  - {fileID: 438981914}
+  - {fileID: 1229834762}
 --- !u!1 &1565980329
 GameObject:
   m_ObjectHideFlags: 0
@@ -14453,6 +14476,7 @@ MonoBehaviour:
   - {fileID: 1104818557}
   - {fileID: 596412645}
   - {fileID: 645279989}
+  - {fileID: 1657246169}
 --- !u!1 &1721605040
 GameObject:
   m_ObjectHideFlags: 0
@@ -15577,7 +15601,9 @@ MonoBehaviour:
   playerID: 0
   color: {r: 0.4509804, g: 0.8, b: 0.4627451, a: 1}
   numberSoldiers: 0
-  neighbors: []
+  neighbors:
+  - {fileID: 1899122772}
+  - {fileID: 377360651}
 --- !u!1 &1925777631
 GameObject:
   m_ObjectHideFlags: 0
