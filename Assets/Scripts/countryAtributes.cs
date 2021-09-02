@@ -40,6 +40,12 @@ public class countryAtributes : MonoBehaviour
         textNumberSoldiers.text = "" + numberSoldiers;
     }
 
+    public void decrementTextNumberSoldiers(int decrement)
+    {
+        this.numberSoldiers = this.numberSoldiers - decrement;
+        textNumberSoldiers.text = "" + numberSoldiers;
+    }
+
 
 
 

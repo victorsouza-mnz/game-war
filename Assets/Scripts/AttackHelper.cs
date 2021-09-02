@@ -39,7 +39,8 @@ public class AttackHelper : MonoBehaviour
         }
         else if (countryClicked != null && isEnemyCountry(countryClicked))
         {
-            diceHelper.rollDice(getNumberOfAttackSoldiers(), countryClicked.gameObject.GetComponent<countryAtributes>().getSoldiers());
+            int[] resultado = diceHelper.rollDice(getNumberOfAttackSoldiers(), getNumberOfDefenseSoldiers(countryClicked));
+            decreaseNumberOfAttackAndDefenseSoldiers(resultado, countryClicked);
         }
     }
 
@@ -125,6 +126,21 @@ public class AttackHelper : MonoBehaviour
             return selectedAttackerCountry.GetComponent<countryAtributes>().getSoldiers() - 1;
         }
 
-        return selectedAttackerCountry.GetComponent<countryAtributes>().getSoldiers();
+        return 3;
+    }
+
+    private int getNumberOfDefenseSoldiers(Collider2D countryClicked)
+    {
+        if (countryClicked.gameObject.GetComponent<countryAtributes>().getSoldiers() > 3)
+        {
+            return 3;
+        }
+        return countryClicked.gameObject.GetComponent<countryAtributes>().getSoldiers();
+    }
+
+    private void decreaseNumberOfAttackAndDefenseSoldiers (int[] resultado, Collider2D countryClicked)
+    {
+        selectedAttackerCountry.GetComponent<countryAtributes>().decrementTextNumberSoldiers(resultado[0]);
+        countryClicked.gameObject.GetComponent<countryAtributes>().decrementTextNumberSoldiers(resultado[1]);
     }
 }
