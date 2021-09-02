@@ -28,7 +28,7 @@ public class RollDice : MonoBehaviour
     public void roll_dice() //versão parcial
     {
         int troop1 = 3;
-        int troop2 = 3;
+        int troop2 = 1;
         List<int> diceResult1 = new List<int>();
         List<int> diceResult2 = new List<int>();
 

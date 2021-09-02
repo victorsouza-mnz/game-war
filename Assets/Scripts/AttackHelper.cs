@@ -13,6 +13,7 @@ public class AttackHelper : MonoBehaviour
     //DEPENDENCES
     private SelectCtrl selectCtrl;
     private RollDice rollDice;
+    private DiceHelper diceHelper;
 
 
     
@@ -20,6 +21,7 @@ public class AttackHelper : MonoBehaviour
     {
         selectCtrl = gameObject.GetComponent<SelectCtrl>();
         rollDice = gameObject.GetComponent<RollDice>();
+        diceHelper = gameObject.GetComponent<DiceHelper>();
     }
 
 
@@ -37,8 +39,7 @@ public class AttackHelper : MonoBehaviour
         }
         else if (countryClicked != null && isEnemyCountry(countryClicked))
         {
-            //TODO : arrumar roll_dice para alterar valor na tela mesmo sem refencia do gameobject
-            //rollDice.roll_dice();
+            diceHelper.rollDice(getNumberOfAttackSoldiers(), countryClicked.gameObject.GetComponent<countryAtributes>().getSoldiers());
         }
     }
 
@@ -99,7 +100,7 @@ public class AttackHelper : MonoBehaviour
         for (int i = 0; i < neighbors.Length; i++)
         {
             neighbors[i].GetComponent<LineRenderer>().enabled = true;
-            neighbors[i].GetComponent<LineRenderer>().materials[0].color = new Color(1.00000f, 0.00000f, 0.00000f);
+            neighbors[i].GetComponent<LineRenderer>().materials[0].color = new Color(1.00000f, 0.84706f, 0.76078f);
             selectedEnemies = neighbors;
         }
 
@@ -116,4 +117,14 @@ public class AttackHelper : MonoBehaviour
         return selectedEnemies.Contains(countryClicked.gameObject);
     }
 
+
+    private int getNumberOfAttackSoldiers()
+    {
+        if (selectedAttackerCountry.GetComponent<countryAtributes>().getSoldiers() <= 3)
+        {
+            return selectedAttackerCountry.GetComponent<countryAtributes>().getSoldiers() - 1;
+        }
+
+        return selectedAttackerCountry.GetComponent<countryAtributes>().getSoldiers();
+    }
 }

@@ -59,6 +59,12 @@ public class countryAtributes : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color = colorArray[playerID];
         textNumberSoldiers = GetComponentInChildren<Text>();
         textNumberSoldiers.text = "" + numberSoldiers;
-    }   
+    }
+    
+
+    public int getSoldiers()
+    {
+        return this.numberSoldiers;
+    }
 
 }
