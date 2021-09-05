@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
-
+using System;
+using UnityEngine.UI;
+using TMPro;
 public class AttackHelper : MonoBehaviour
 {   
     // STATE
     private GameObject[] selectedEnemies = new GameObject[0];
     private GameObject selectedAttackerCountry = null;
+    public TMP_InputField inputField;
+    
 
     //DEPENDENCES
     private SelectCtrl selectCtrl;
@@ -41,10 +44,31 @@ public class AttackHelper : MonoBehaviour
         {
             int[] resultado = diceHelper.rollDice(getNumberOfAttackSoldiers(), getNumberOfDefenseSoldiers(countryClicked));
             decreaseNumberOfAttackAndDefenseSoldiers(resultado, countryClicked);
+
+            if (winANewTerritory(countryClicked))
+            {
+                countryClicked.gameObject.GetComponent<countryAtributes>().changeCountryOwner(selectCtrl.getCurrentPlayerId());
+                selectedAttackerCountry.GetComponent<countryAtributes>().decrementTextNumberSoldiers(1);
+                countryClicked.gameObject.GetComponent<countryAtributes>().incrementTextNumberSoldiers(1);
+                this.inputField.gameObject.SetActive(true);
+            }
         }
     }
 
 
+    public void transferSoldiers()
+    {
+        
+        Debug.Log(inputField.text);
+        this.inputField.gameObject.SetActive(false);
+
+    }
+
+
+    public bool winANewTerritory(Collider2D countryClicked)
+    {
+        return !Convert.ToBoolean(countryClicked.gameObject.GetComponent<countryAtributes>().getSoldiers());
+    }
 
     public void selectAttackerCountryAndEnemyNeighbors(Collider2D countryClicked)
     {

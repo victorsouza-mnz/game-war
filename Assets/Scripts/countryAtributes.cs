@@ -46,6 +46,11 @@ public class countryAtributes : MonoBehaviour
         textNumberSoldiers.text = "" + numberSoldiers;
     }
 
+    public void changeCountryOwner(int newPlayerID)
+    {
+        this.playerID = newPlayerID;
+        gameObject.GetComponent<SpriteRenderer>().color = colorArray[playerID]; // recolorir
+    }
 
 
 
