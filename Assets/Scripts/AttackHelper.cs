@@ -11,7 +11,9 @@ public class AttackHelper : MonoBehaviour
     private GameObject[] selectedEnemies = new GameObject[0];
     private GameObject selectedAttackerCountry = null;
     public TMP_InputField inputField;
-    
+    private GameObject conqueredCountry;
+    private GameObject conquerorCountry;
+
 
     //DEPENDENCES
     private SelectCtrl selectCtrl;
@@ -32,6 +34,7 @@ public class AttackHelper : MonoBehaviour
     public void attackerManager()
     {
         Collider2D countryClicked = getCountryClicked();
+
         if (countryClicked != null && isOwnCountry(countryClicked))
         {
             selectAttackerCountryAndEnemyNeighbors(countryClicked);
@@ -47,19 +50,37 @@ public class AttackHelper : MonoBehaviour
 
             if (winANewTerritory(countryClicked))
             {
-                countryClicked.gameObject.GetComponent<countryAtributes>().changeCountryOwner(selectCtrl.getCurrentPlayerId());
-                selectedAttackerCountry.GetComponent<countryAtributes>().decrementTextNumberSoldiers(1);
-                countryClicked.gameObject.GetComponent<countryAtributes>().incrementTextNumberSoldiers(1);
-                this.inputField.gameObject.SetActive(true);
+                conquerOtherTerritory(countryClicked);
             }
         }
+
+    }
+
+    
+
+    public void conquerOtherTerritory(Collider2D countryClicked)
+    {
+        countryClicked.gameObject.GetComponent<countryAtributes>().changeCountryOwner(selectCtrl.getCurrentPlayerId());
+        this.inputField.gameObject.SetActive(true);
+        selectedEnemies = selectedEnemies.Where(val => val != countryClicked.gameObject).ToArray();
+        countryClicked.gameObject.GetComponent<LineRenderer>().enabled = false;
+        this.inputField.gameObject.SetActive(true);
+        conqueredCountry = countryClicked.gameObject;
+        conquerorCountry = selectedAttackerCountry;
     }
 
 
-    public void transferSoldiers()
+
+    public void transferSoldiers() // this runs when palyer press enter with some value in the text input
     {
         
-        Debug.Log(inputField.text);
+        if (int.Parse(inputField.text) >= conquerorCountry.GetComponent<countryAtributes>().getSoldiers()
+            || int.Parse(inputField.text) < 1)
+        {
+            return;
+        }
+        conquerorCountry.GetComponent<countryAtributes>().decrementTextNumberSoldiers(int.Parse(inputField.text));
+        conqueredCountry.GetComponent<countryAtributes>().incrementTextNumberSoldiers(int.Parse(inputField.text));
         this.inputField.gameObject.SetActive(false);
 
     }
