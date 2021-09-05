@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class SelectCtrl : MonoBehaviour
 {
 
@@ -14,14 +15,18 @@ public class SelectCtrl : MonoBehaviour
     //DECLARATIONS
     private bool isSelected = false;
     private GameObject selectedCountry;
+
     private LineRenderer outline;
 
+    //HELPERS
+    public AttackHelper attackHelper;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        attackHelper = gameObject.GetComponent<AttackHelper>();
+
+    }   
 
     // Update is called once per frame
     void Update()
@@ -34,12 +39,21 @@ public class SelectCtrl : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-
             if (this.phase == "fortification") {
                 fortifyCountry();
+                selectCountry();
             }
-            selectCountry();
-            
+            else if (this.phase == "attack")
+            {
+                attackHelper.attackerManager();
+
+               
+            }
+
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            this.phase = "attack";
         }
     }
 
@@ -55,23 +69,29 @@ public class SelectCtrl : MonoBehaviour
                     isSelected = true;
                     selectedCountry = hit.collider.gameObject;
                     outline = hit.collider.gameObject.GetComponent<LineRenderer>();
+                    selectedCountry.GetComponent<LineRenderer>().materials[0].color = new Color(1.00000f, 1.00000f, 1.00000f);
                     outline.enabled = true;
+
                 }
-                if (isSelected == true) 
+                else if (isSelected == true) 
                 {
                     selectedCountry.gameObject.GetComponent<LineRenderer>().enabled = false;
                     isSelected = true;
                     selectedCountry = hit.collider.gameObject;
                     outline = hit.collider.gameObject.GetComponent<LineRenderer>();
+                    selectedCountry.GetComponent<LineRenderer>().materials[0].color = new Color(1.00000f, 1.00000f, 1.00000f);
                     outline.enabled = true;
                 }
             }
 
         } else {
-            isSelected = false;
-            outline = selectedCountry.gameObject.GetComponent<LineRenderer>();
-            selectedCountry = null;
-            outline.enabled = false;
+            if (isSelected)
+                {
+                    isSelected = false;
+                    outline = selectedCountry.gameObject.GetComponent<LineRenderer>();
+                    selectedCountry = null;
+                    outline.enabled = false;
+                }
         }
     }
 
@@ -86,6 +106,12 @@ public class SelectCtrl : MonoBehaviour
                 currentPlayerSoldiers--;
             }
         }
+    }
+
+
+    public int getCurrentPlayerId()
+    {
+        return this.currentPlayer;
     }
 
 }
