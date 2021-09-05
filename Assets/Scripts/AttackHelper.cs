@@ -13,6 +13,7 @@ public class AttackHelper : MonoBehaviour
     public TMP_InputField inputField;
     private GameObject conqueredCountry;
     private GameObject conquerorCountry;
+    private int numberOfSoldiersLastAttack;
 
 
     //DEPENDENCES
@@ -46,6 +47,7 @@ public class AttackHelper : MonoBehaviour
         else if (countryClicked != null && isEnemyCountry(countryClicked))
         {
             int[] resultado = diceHelper.rollDice(getNumberOfAttackSoldiers(), getNumberOfDefenseSoldiers(countryClicked));
+            numberOfSoldiersLastAttack = getNumberOfAttackSoldiers();
             decreaseNumberOfAttackAndDefenseSoldiers(resultado, countryClicked);
 
             if (winANewTerritory(countryClicked))
@@ -74,7 +76,7 @@ public class AttackHelper : MonoBehaviour
     public void transferSoldiers() // this runs when palyer press enter with some value in the text input
     {
         
-        if (int.Parse(inputField.text) >= conquerorCountry.GetComponent<countryAtributes>().getSoldiers()
+        if (int.Parse(inputField.text) > numberOfSoldiersLastAttack
             || int.Parse(inputField.text) < 1)
         {
             return;
