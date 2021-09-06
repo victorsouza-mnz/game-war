@@ -22,7 +22,7 @@ public class countryAtributes : MonoBehaviour
 
     void Start()
     {   
-        initialize();
+
 
     }
 
@@ -54,7 +54,7 @@ public class countryAtributes : MonoBehaviour
 
 
 
-    private void initialize () {
+    public void initialize (int playerID) {
         colorArray = new Color[6]{
             new Color(0.34118f,  0.17255f,  0.53333f), // roxo
             new Color(0.40784f,  0.72157f,  0.20784f), // verde
@@ -66,7 +66,7 @@ public class countryAtributes : MonoBehaviour
         };
 
         this.numberSoldiers = 1;
-        this.playerID = UnityEngine.Random.Range(0,6);
+        this.playerID = playerID;
         gameObject.GetComponent<SpriteRenderer>().color = colorArray[playerID];
         textNumberSoldiers = GetComponentInChildren<Text>();
         textNumberSoldiers.text = "" + numberSoldiers;
