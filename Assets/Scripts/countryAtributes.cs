@@ -17,6 +17,9 @@ public class countryAtributes : MonoBehaviour
     public GameObject[] neighbors;
     private Text textNumberSoldiers;
 
+    //Toda vez que trocar de turno, tem q zerar essa var
+    public int soldiersArrivedInMovementPhase;
+
     // Start is called before the first frame update
 
 
@@ -70,12 +73,16 @@ public class countryAtributes : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color = colorArray[playerID];
         textNumberSoldiers = GetComponentInChildren<Text>();
         textNumberSoldiers.text = "" + numberSoldiers;
+        this.soldiersArrivedInMovementPhase = 0;
     }
     
-
     public int getSoldiers()
     {
         return this.numberSoldiers;
     }
 
+    public void incrementSoldiersArrived(int increment)
+    {
+        this.soldiersArrivedInMovementPhase = this.soldiersArrivedInMovementPhase + increment;
+    }
 }

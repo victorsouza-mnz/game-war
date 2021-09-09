@@ -10,7 +10,8 @@ public class SelectCtrl : MonoBehaviour
     //MOCK - TODO : Mecanica de turnos
     private int currentPlayer = 2;
     private int currentPlayerSoldiers = 6;
-    private string phase = "fortification";
+    private string[] phases = new string[3];
+    private int i = 0;
 
     //DECLARATIONS
     private bool isSelected = false;
@@ -20,10 +21,15 @@ public class SelectCtrl : MonoBehaviour
 
     //HELPERS
     public AttackHelper attackHelper;
+    public MoveHelper moveHelper;
 
     // Start is called before the first frame update
     void Start()
     {
+        phases[0] = "fortification";
+        phases[1] = "attack";
+        phases[2] = "movement";
+        moveHelper = gameObject.GetComponent<MoveHelper>();
         attackHelper = gameObject.GetComponent<AttackHelper>();
 
     }   
@@ -39,21 +45,25 @@ public class SelectCtrl : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-            if (this.phase == "fortification") {
+            if (this.phases[i] == "fortification") {
                 fortifyCountry();
                 selectCountry();
             }
-            else if (this.phase == "attack")
+            else if (this.phases[i] == "attack")
             {
                 attackHelper.attackerManager();
-
-               
+            }
+            else if (this.phases[i] == "movement")
+            {
+                moveHelper.moveManager();
             }
 
         }
         if (Input.GetMouseButtonUp(1))
         {
-            this.phase = "attack";
+
+            i++;
+            if(i > 2) i=0;
         }
     }
 
