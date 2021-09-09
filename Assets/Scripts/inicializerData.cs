@@ -11,7 +11,7 @@ public class inicializerData : MonoBehaviour
 
     void Start()
     {
-        numberOfPlayers = 4;
+        numberOfPlayers = DropdownHandler.playersQuantity;
         countries = GameObject.FindGameObjectsWithTag("Country");
         inicializerCountryOwners(numberOfPlayers, countries);
     }

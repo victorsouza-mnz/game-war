@@ -10,5 +10,4 @@ public class MenuCtrl : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
- 
 }
