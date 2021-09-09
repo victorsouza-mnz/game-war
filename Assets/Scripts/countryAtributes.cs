@@ -18,7 +18,7 @@ public class countryAtributes : MonoBehaviour
     private Text textNumberSoldiers;
 
     // Start is called before the first frame update
-
+    public int soldiersArrivedInMovementPhase;
 
     void Start()
     {   
@@ -70,8 +70,14 @@ public class countryAtributes : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color = colorArray[playerID];
         textNumberSoldiers = GetComponentInChildren<Text>();
         textNumberSoldiers.text = "" + numberSoldiers;
+        this.soldiersArrivedInMovementPhase = 0;
     }
     
+    public void incrementSoldiersArrived(int increment)
+    {
+        this.soldiersArrivedInMovementPhase = this.soldiersArrivedInMovementPhase + increment;
+    }
+
 
     public int getSoldiers()
     {
