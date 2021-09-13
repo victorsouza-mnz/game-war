@@ -39,7 +39,7 @@ public class inicializerData : MonoBehaviour
 
         for (int m = 0; m < 42 - divider * numberOfPlayers; m++)
         {
-            countries[m + divider * numberOfPlayers].GetComponent<countryAtributes>().initialize(Random.Range(0, numberOfPlayers + 1));
+            countries[m + divider * numberOfPlayers].GetComponent<countryAtributes>().initialize(Random.Range(0, numberOfPlayers));
         }
 
     }
