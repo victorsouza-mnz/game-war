@@ -5683,7 +5683,7 @@ GameObject:
   - component: {fileID: 604761782}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: Phase Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5704,7 +5704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364, y: -26}
+  m_AnchoredPosition: {x: -381.9, y: -175}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604761782
@@ -5720,7 +5720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19775,7 +19775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 404.69, y: 243.67}
+  m_AnchoredPosition: {x: 430.5, y: 200}
   m_SizeDelta: {x: 66.8, y: 60.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623805280
@@ -21089,7 +21089,7 @@ GameObject:
   - component: {fileID: 1698021476}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: Text Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21146,7 +21146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PASSAR TURNO
+  m_Text: Passar Fase
 --- !u!222 &1698021477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23275,7 +23275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364, y: -65}
+  m_AnchoredPosition: {x: -381.9, y: -145}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913109716

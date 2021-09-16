@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class SelectCtrl : MonoBehaviour
     private string[] phases = new string[3];
     private int i = 0;
     private Text textCurrentPlayer;
+    private GameObject buttonText;
+    private GameObject phaseText;
 
     //DECLARATIONS
     private bool isSelected = false;
@@ -38,12 +41,15 @@ public class SelectCtrl : MonoBehaviour
         textCurrentPlayer = GetComponentInChildren<Text>();
         textCurrentPlayer.text = "Jogador atual: " + (this.currentPlayer+1);
 
+        buttonText = GameObject.FindGameObjectsWithTag("Text Button")[0];
+        phaseText = GameObject.FindGameObjectsWithTag("Phase Text")[0];
+
+        phaseText.GetComponent<Text>().text = this.phases[i].ToUpper();
     }   
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Jogador atual: "+ this.currentPlayer);
         MouseInput();
     }
 
@@ -126,15 +132,39 @@ public class SelectCtrl : MonoBehaviour
 
     public void passarTurno () 
     {
-        int players = DropdownHandler.playersQuantity - 1;
-        if (this.currentPlayer == players){
-            this.currentPlayer = 0;
-        } else {
-            this.currentPlayer+=1;
+        
+        if (this.phases[i] == "movement"){
+
+            for (int i = 0; i < DropdownHandler.playersQuantity; i++) {
+                currentPlayerSoldiers[i] = 6;
+            }
+
+            int players = DropdownHandler.playersQuantity - 1;
+            if (this.currentPlayer == players){
+                this.currentPlayer = 0;
+            } else {
+                this.currentPlayer+=1;
+            }
+
+            this.i = 0;
+            phaseText.GetComponent<Text>().text = this.phases[i].ToUpper();
+            cleanSoldiersArrive();
+            moveHelper.deselectEverythig();
+            changeTextPlayer();
+            buttonText.GetComponent<Text>().text = "Passar Fase";
+        } else if(this.phases[i] == "attack"){
+            i++;
+            if(i > 2) i=0;
+            phaseText.GetComponent<Text>().text = this.phases[i].ToUpper();
+            buttonText.GetComponent<Text>().text = "Passar Turno";
+        } 
+        
+        else{
+            i++;
+            if(i > 2) i=0;
+            phaseText.GetComponent<Text>().text = this.phases[i].ToUpper();
         }
-        this.i = 0;
-        moveHelper.deselectEverythig();
-        changeTextPlayer();
+
     }
 
     public void changeTextPlayer() {
@@ -147,4 +177,10 @@ public class SelectCtrl : MonoBehaviour
         return this.currentPlayer;
     }
 
+    private void cleanSoldiersArrive () {
+        GameObject[] countries = GameObject.FindGameObjectsWithTag("Country");
+        for (int i = 0; i < countries.Length; i++) {
+            countries[i].GetComponent<countryAtributes>().soldiersArrivedInMovementPhase = 0;
+        }
+    }
 }

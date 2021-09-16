@@ -100,14 +100,15 @@ public class MoveHelper : MonoBehaviour
 
     public void deselectEverythig()
     {
-
-        selectedOriginAllyCountry.GetComponent<LineRenderer>().enabled = false;
-        selectedOriginAllyCountry = null;
-        for (int i = 0; i < selectedAllies.Length; i++)
-        {
-            selectedAllies[i].GetComponent<LineRenderer>().enabled = false;
+        if (selectedOriginAllyCountry != null){
+            selectedOriginAllyCountry.GetComponent<LineRenderer>().enabled = false;
+            selectedOriginAllyCountry = null;
+            for (int i = 0; i < selectedAllies.Length; i++)
+            {
+                selectedAllies[i].GetComponent<LineRenderer>().enabled = false;
+            }
+            selectedAllies = new GameObject[0];
         }
-        selectedAllies = new GameObject[0];
     }
 
 
